@@ -1,0 +1,8 @@
+* {
+    --bg-color-about: #dde8b9;
+}
+
+.about-screen {
+    background-color: var(--bg-color-about);
+    height: 200vh;
+}

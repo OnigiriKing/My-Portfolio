@@ -1,0 +1,15 @@
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+.header-menu p {
+       margin: 5px 10px;
+       color: var(--font-color-home);
+}
+
+.scrolled {
+    color: #AD8B73;
+}
