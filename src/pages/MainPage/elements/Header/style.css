@@ -1,13 +1,29 @@
 .header-menu {
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: fixed;
-    right: 0;
     z-index: 1;
+    top: 5px;
 }
 .header-menu p {
        margin: 5px 10px;
        color: var(--font-color-home);
+}
+
+.nav-links {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sm-links {
+    position: absolute;
+    right: 10px;
+}
+.sm-links a{
+    margin: 0 5px;
 }
 
 .scrolled {
