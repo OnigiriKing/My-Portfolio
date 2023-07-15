@@ -3,12 +3,13 @@ import "./style.css";
 import { headerSvg } from "../../../../svg/HeaderSvg";
 
 export default function HeaderMenu() {
-
+  
   const [isHover, setHover] = React.useState({ln: false, git: false, inst: false })
 
   function changeHover(type, state) {
-    setHover({ ...isHover, [type]: state });
+    setHover((prevState) => ({ ...prevState, [type]: state }));
   }
+  
 
   function getMouseHandlers(mediaType) {
     return {
