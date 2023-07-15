@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { linkDinSvg, instSvg, gitHubSvg, linkDinSvgActive, instSvgActive, gitHubSvgActive } from "../../../../svg/HeaderSvg";
+import { headerSvg } from "../../../../svg/HeaderSvg";
 
 export default function HeaderMenu() {
 
@@ -37,21 +37,21 @@ export default function HeaderMenu() {
             target="_blank"
             {...getMouseHandlers("ln")}
           >
-            {!isHover.ln ? linkDinSvg : linkDinSvgActive}
+            {headerSvg("ln", isHover.ln)}
           </a>
           <a
             href="https://github.com/OnigiriKing"
             target="_blank"
             {...getMouseHandlers("git")}
           >
-            {!isHover.git ? gitHubSvg : gitHubSvgActive}
+            {headerSvg("git", isHover.git)}
           </a>
           <a
             href="https://www.instagram.com/onigiri_king/"
             target="_blank"
             {...getMouseHandlers("inst")}
           >
-            {!isHover.inst ? instSvg : instSvgActive}
+            {headerSvg("inst", isHover.inst)}
           </a>
         </div>
       </div>
