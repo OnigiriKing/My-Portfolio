@@ -14,11 +14,7 @@
 }
 
 .start-screen h1 {
-    font-size: 100px;
-    color: var(--font-color-home);
-}
-.start-screen h2 {
-    font-size: 80px;
+    font-size: 90px;
     color: var(--font-color-home);
 }
 
@@ -34,4 +30,5 @@
 .arror-svg {
     position: absolute;
     bottom: 0;
+
 }
