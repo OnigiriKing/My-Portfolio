@@ -1,6 +1,6 @@
 
 const svgColor = "#fffbe9";
-const svgColorActive = "#dde8b9";
+const svgColorActive = "#512D38";
 
 export const linkDinSvg = (
   <svg

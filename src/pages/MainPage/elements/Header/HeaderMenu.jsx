@@ -10,6 +10,17 @@ export default function HeaderMenu() {
     setHover({ ...isHover, [type]: state });
   }
 
+  function getMouseHandlers(mediaType) {
+    return {
+      onMouseEnter: function () {
+        changeHover(mediaType, true);
+      },
+      onMouseLeave: function () {
+        changeHover(mediaType, false);
+      },
+    };
+  }
+
     return (
       <div className="header-menu">
         <div>
@@ -24,24 +35,21 @@ export default function HeaderMenu() {
           <a
             href="https://www.linkedin.com/in/onigiriking/"
             target="_blank"
-            onMouseEnter={() => changeHover("ln", true)}
-            onMouseLeave={() => changeHover("ln", false)}
+            {...getMouseHandlers("ln")}
           >
             {!isHover.ln ? linkDinSvg : linkDinSvgActive}
           </a>
           <a
             href="https://github.com/OnigiriKing"
             target="_blank"
-            onMouseEnter={() => changeHover("git", true)}
-            onMouseLeave={() => changeHover("git", false)}
+            {...getMouseHandlers("git")}
           >
             {!isHover.git ? gitHubSvg : gitHubSvgActive}
           </a>
           <a
             href="https://www.instagram.com/onigiri_king/"
             target="_blank"
-            onMouseEnter={() => changeHover("inst", true)}
-            onMouseLeave={() => changeHover("inst", false)}
+            {...getMouseHandlers("inst")}
           >
             {!isHover.inst ? instSvg : instSvgActive}
           </a>
