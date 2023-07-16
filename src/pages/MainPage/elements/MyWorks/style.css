@@ -1,8 +1,45 @@
 .works-screen {
     background-color: #77625C;
-    height: 200vh
+    height: 200vh;
+    display: flex;
+    justify-content: center;
 };
 
-.big-card img {
-    width: 50px;
+
+.image-cards {
+  background-color: #fff;
+  display: flex;
 }
+
+
+.big-card-first {
+    transform: translate(-50%, 30%) translateX(-8%) rotate(-10deg);
+}
+
+.big-card-second {
+     transform: translate(-50%, 30%) rotate(-6deg);
+
+}
+
+.big-card-third {
+     transform: translate(-50%, 30%) translateY(-2%) translateX(11%);
+
+}
+
+.big-card-fourth {
+     transform: translate(-50%, 30%) translateX(11%) rotate(3deg);
+}
+
+.big-card  {
+    width: 250px;
+    aspect-ratio: 5 / 8;
+    position: absolute;
+};
+
+
+/*? transformation */
+
+.image-cards:hover .big-card-first {
+  transform: translateX(31%);
+}
+
