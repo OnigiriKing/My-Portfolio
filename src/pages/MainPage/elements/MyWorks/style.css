@@ -2,3 +2,7 @@
     background-color: #77625C;
     height: 200vh
 };
+
+.big-card img {
+    width: 50px;
+}
