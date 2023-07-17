@@ -14,28 +14,28 @@ export default function WorksScreen() {
               <img
                 src={mainCards.budgetWebsite}
                 alt="budgetWebsite"
-                className="big-card big-card-first"
+                className="big-card-first"
               />
             </div>
             <div>
               <img
                 src={mainCards.cryptoWebsite}
                 alt="cryptoWebsite"
-                className="big-card big-card-second"
+                className="big-card-second"
               />
             </div>
             <div>
               <img
                 src={mainCards.recipeWebsite}
                 alt="recipeWebsite"
-                className="big-card big-card-third"
+                className="big-card-third"
               />
             </div>
             <div>
               <img
                 src={mainCards.portfolioWebsite}
                 alt="portfolioWebsite"
-                className="big-card big-card-fourth"
+                className="big-card-fourth"
               />
             </div>
 

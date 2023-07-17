@@ -1,56 +1,49 @@
 .works-screen {
-    background-color: var(--bg-main-works);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-
-};
-
+  background-color: var(--bg-main-works);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 
 .image-cards {
   position: relative;
 }
 
 
-
+.big-card-first, .big-card-second, .big-card-third, .big-card-fourth {
+  position: absolute;
+  aspect-ratio: 5 / 8;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
 
 .big-card-first {
-    transform: translate(-50%, 50%) rotate(-10deg);
-    aspect-ratio: 5 / 8;
-    width: 250px;
-    position: absolute;
+  transform: translate(-50%, 50%) rotate(-10deg);
 }
 
 .big-card-second {
-     transform: translate(-50%, 50%) rotate(-6deg);
-     aspect-ratio: 5 / 8;
-    width: 250px;
-    position: absolute;
-    
+  transform: translate(-50%, 50%) rotate(-6deg);
 }
 
 .big-card-third {
-     transform: translate(-50%, 50%) translateY(-2%) translateX(11%);
-     aspect-ratio: 5 / 8;
-    width: 250px;
-    position: absolute;
-     
-
+  transform: translate(-50%, 50%) translateY(-2%) translateX(11%);
 }
 
 .big-card-fourth {
-     transform: translate(-50%, 50%) rotate(3deg);
-     aspect-ratio: 5 / 8;
-    width: 250px;
-    position: absolute;
-     
+  transform: translate(-50%, 50%) rotate(3deg);
 }
-
-
 
 /*? transformation */
 
-.image-cards:hover .big-card-fourth {
-  transform: translate(-50%, 50%) rotate(10deg);
+.image-cards:hover .big-card-first {
+  transform: translate(-50%, 50%) translate(-60px, -70px) rotate(-20deg);
 }
-
+.image-cards:hover .big-card-second {
+  transform: translate(-50%, 50%) translate(-40px, -50px) rotate(-10deg);
+}
+.image-cards:hover .big-card-third {
+  transform: translate(-50%, 50%) translate(60px, -70px) rotate(10deg);
+}
+.image-cards:hover .big-card-fourth {
+  transform: translate(-50%, 50%) translate(50px, -30px) rotate(25deg);
+}
