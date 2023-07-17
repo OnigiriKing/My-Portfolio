@@ -10,32 +10,32 @@ export default function WorksScreen() {
       <div className="works-screen">
         <div className="image-cards">
           <Link to={"/works"}>
-            <div>
+            <div className="big-card-second">
               <img
                 src={mainCards.budgetWebsite}
                 alt="budgetWebsite"
-                className="big-card big-card-first"
+                className="big-card"
               />
             </div>
-            <div>
+            <div className="big-card-second">
               <img
                 src={mainCards.cryptoWebsite}
                 alt="cryptoWebsite"
-                className="big-card big-card-second"
+                className="big-card"
               />
             </div>
-            <div>
+            <div className=" big-card-third">
               <img
                 src={mainCards.recipeWebsite}
                 alt="recipeWebsite"
-                className="big-card big-card-third"
+                className="big-card"
               />
             </div>
-            <div>
+            <div className="big-card-fourth">
               <img
                 src={mainCards.portfolioWebsite}
                 alt="portfolioWebsite"
-                className="big-card big-card-fourth"
+                className="big-card"
               />
             </div>
 

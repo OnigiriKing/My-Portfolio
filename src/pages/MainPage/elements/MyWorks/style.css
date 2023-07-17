@@ -3,42 +3,48 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+
 };
 
 
 .image-cards {
-  display: flex;
+  position: relative;
 }
+
+
+.big-card  {
+    aspect-ratio: 5 / 8;
+    width: 250px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+};
 
 
 .big-card-first {
-    transform: translate(-50%, 30%) translateX(-8%) rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 .big-card-second {
-     transform: translate(-50%, 30%) rotate(-6deg);
-
+     transform: rotate(-6deg);
+    
 }
 
 .big-card-third {
-     transform: translate(-50%, 30%) translateY(-2%) translateX(11%);
+     transform: translateY(-2%) translateX(11%);
+     
 
 }
 
 .big-card-fourth {
-     transform: translate(-50%, 30%) translateX(11%) rotate(3deg);
+     transform: translate(-50%, 50%) translateX(11%) rotate(3deg);
+     
 }
 
-.big-card  {
-    width: 250px;
-    aspect-ratio: 5 / 8;
-    position: absolute;
-};
 
 
 /*? transformation */
 
-.image-cards:hover .big-card-first {
-  transform: translateX(31%);
+.image-cards:hover .big-card-fourth {
+  transform: rotate(-10deg);
 }
 
