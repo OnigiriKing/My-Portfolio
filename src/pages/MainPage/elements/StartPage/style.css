@@ -6,7 +6,7 @@
 
 .start-screen {
         background-color: var(--bg-color-home);
-        height: 200%;
+        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -19,12 +19,10 @@
 }
 
 .start-h1h2 {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 50vh;
 }
 
 .arror-svg {
