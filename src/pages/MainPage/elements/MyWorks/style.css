@@ -1,5 +1,5 @@
 .works-screen {
-    background-color: #77625C;
+    background-color: var(--bg-main-works);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,7 +7,6 @@
 
 
 .image-cards {
-  background-color: #fff;
   display: flex;
 }
 
