@@ -12,31 +12,37 @@
 }
 
 
-.big-card  {
-    aspect-ratio: 5 / 8;
-    width: 250px;
-    position: absolute;
-    transform: translate(-50%, 50%);
-};
 
 
 .big-card-first {
-    transform: rotate(-10deg);
+    transform: translate(-50%, 50%) rotate(-10deg);
+    aspect-ratio: 5 / 8;
+    width: 250px;
+    position: absolute;
 }
 
 .big-card-second {
-     transform: rotate(-6deg);
+     transform: translate(-50%, 50%) rotate(-6deg);
+     aspect-ratio: 5 / 8;
+    width: 250px;
+    position: absolute;
     
 }
 
 .big-card-third {
-     transform: translateY(-2%) translateX(11%);
+     transform: translate(-50%, 50%) translateY(-2%) translateX(11%);
+     aspect-ratio: 5 / 8;
+    width: 250px;
+    position: absolute;
      
 
 }
 
 .big-card-fourth {
-     transform: translate(-50%, 50%) translateX(11%) rotate(3deg);
+     transform: translate(-50%, 50%) rotate(3deg);
+     aspect-ratio: 5 / 8;
+    width: 250px;
+    position: absolute;
      
 }
 
@@ -45,6 +51,6 @@
 /*? transformation */
 
 .image-cards:hover .big-card-fourth {
-  transform: rotate(-10deg);
+  transform: translate(-50%, 50%) rotate(10deg);
 }
 
