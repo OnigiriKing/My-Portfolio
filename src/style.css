@@ -7,4 +7,10 @@
   --font-color-home: #FFFBE9;
   --bg-color-about: #dde8b9;
   --bg-main-works: #77625C;
+  --links-active-color: #512D38;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
