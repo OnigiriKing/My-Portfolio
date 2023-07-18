@@ -15,6 +15,7 @@
   aspect-ratio: 5 / 8;
   width: 250px;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 2px;
 }
 
 .big-card-first {
@@ -22,28 +23,28 @@
 }
 
 .big-card-second {
-  transform: translate(-50%, 50%) rotate(-6deg);
+  transform: translate(-50%, 50%) rotate(-4deg);
 }
 
 .big-card-third {
-  transform: translate(-50%, 50%) translateY(-2%) translateX(11%);
+  transform: translate(-55%, 53%) translateY(-2%) translateX(11%);
 }
 
 .big-card-fourth {
-  transform: translate(-50%, 50%) rotate(3deg);
+  transform: translate(-40%, 50%) rotate(1deg);
 }
 
 /*? transformation */
 
 .image-cards:hover .big-card-first {
-  transform: translate(-50%, 50%) translate(-60px, -70px) rotate(-20deg);
+  transform: translate(-80%, 60%) translate(-60px, -70px) rotate(-20deg);
 }
 .image-cards:hover .big-card-second {
   transform: translate(-50%, 50%) translate(-40px, -50px) rotate(-10deg);
 }
 .image-cards:hover .big-card-third {
-  transform: translate(-50%, 50%) translate(60px, -70px) rotate(10deg);
+  transform: translate(-50%, 60%) translate(60px, -70px) rotate(10deg);
 }
 .image-cards:hover .big-card-fourth {
-  transform: translate(-50%, 50%) translate(50px, -30px) rotate(25deg);
+  transform: translate(-10%, 60%) translate(50px, -30px) rotate(25deg);
 }
