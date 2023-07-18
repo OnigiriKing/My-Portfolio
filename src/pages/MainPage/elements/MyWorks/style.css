@@ -14,7 +14,7 @@
   position: absolute;
   aspect-ratio: 5 / 8;
   width: 250px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   box-shadow: 2px;
 }
 
@@ -48,3 +48,43 @@
 .image-cards:hover .big-card-fourth {
   transform: translate(-10%, 60%) translate(50px, -30px) rotate(25deg);
 }
+
+
+/* Small cards */
+
+.small-card-first, .small-card-second, .small-card-third, .small-card-fourth {
+  position: absolute;
+  width: 70px;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 2px;
+  transform: translate(-50%, 600%)
+}
+
+/* .small-card-first {
+  transform: translate(-50%, 600%) translate(-250px, -300px) rotate(15deg);
+}
+.small-card-second {
+  transform: translate(-50%, 600%) translate(-200px, 150px) rotate(-10deg);
+}
+.small-card-third {
+  transform: translate(-50%, 600%) translate(270px, -270px) rotate(-20deg);
+}
+.small-card-fourth {
+  transform: translate(-50%, 600%) translate(210px, 200px) rotate(10deg);
+} */
+
+/* ? small cards hover animation */
+
+.image-cards:hover .small-card-first {
+     transform: translate(-50%, 600%) translate(220px, 210px) rotate(10deg);
+}
+.image-cards:hover .small-card-second {
+  transform: translate(-50%, 600%) translate(-200px, 150px) rotate(-10deg);
+}
+.image-cards:hover .small-card-third {
+   transform: translate(-50%, 600%) translate(-250px, -300px) rotate(15deg);
+}
+.image-cards:hover .small-card-fourth {
+  transform: translate(-50%, 600%) translate(270px, -275px) rotate(-20deg);
+}
+
